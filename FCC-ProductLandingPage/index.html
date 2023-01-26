@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9dc6ee7567.js" crossorigin="anonymous"></script>
+    <title>FCC: Product Landing Page</title>
+</head>
+
+<body>
+
+    <div class="contenedor__header">
+        <header class="header" id="header">
+            <div class="contenedor__logo-header">
+                <img src="https://logodownload.org/wp-content/uploads/2014/07/adidas-logo-branco.png" alt="Adidas Logo"
+                    class="header__img" id="header-img">
+            </div>
+            <div class="contenedor__nav-header">
+                <nav class="nav__bar" id="nav-bar">
+                    <ul class="lista__desordenada">
+                        <li class="nav__item"><a class="nav-link nav-1" href="#inicio">Inicio</a></li>
+                        <li class="nav__item"><a class="nav-link nav-2"
+                                href="#nuestrasCaracteristicas">Características</a></li>
+                        <li class="nav__item"><a class="nav-link nav-3" href="#nuestrosProductos">Productos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="contenedor__titulo" id="inicio">
+        <h1 class="h1__titulo">Nada es imposible.</h1>
+    </div>
+    <div class="contenedor__registro">
+        <form class="formulario__registro" id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+            <div class="contenedor__input-registro">
+                <input type="email" name="email" class="email__registro" id="email" placeholder="Tú Email">
+            </div>
+            <div class="contenedor__input-registro">
+                <input class="boton__registro" id="submit" type="submit" value="Enviar"
+                    src="https://www.freecodecamp.com/email-submit">
+            </div>
+        </form>
+    </div>
+    <div class="contenedor__video">
+        <iframe class="video__yt" id="video" src="https://www.youtube.com/embed/fujboh-W7Sk"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <main class="contenedor__principal">
+        <section class="caracteristicas" id="nuestrasCaracteristicas">
+            <div class="contenedor__caracteristicas">
+                <div class="descripcion">
+                    <div class="contenedor__icono">
+                        <i class="fa-solid fa-shirt icono"></i>
+                    </div>
+                    <h1 class="h1__descripcion">Ropa premium</h1>
+                    <p class="p__descripcion">Nuestra ropa esta hecha de materiales de alta calidad para un mayor
+                        confort y una mayor durabilidad</p>
+                </div>
+                <div class="descripcion">
+                    <div class="contenedor__icono">
+                        <i class="fa-solid fa-magnifying-glass icono"></i>
+                    </div>
+                    <h1 class="h1__descripcion">¡Encuentra lo que buscas!</h1>
+                    <p class="p__descripcion">Podes encontrar el producto que buscas, ¡tanto para practicar deporte como
+                        para usar día a día!</p>
+                </div>
+                <div class="descripcion">
+                    <div class="contenedor__icono">
+                        <i class="fa-solid fa-bell-concierge icono"></i>
+                    </div>
+                    <h1 class="h1__descripcion">Atención 24/7</h1>
+                    <p class="p__descripcion">Ante cualquier consulta, podes contactarnos. ¡Respoderemos lo antes
+                        posible a tu duda!</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor__precios" id="nuestrosProductos">
+            <div class="producto">
+                <div class="contenedor__titulo--productos">
+                    <h2 class="titulo__producto">Remeras y buzos</h2>
+                </div>
+                <ol class="lista__producto">
+                    <li class="item__producto">Básico</li>
+                    <li class="item__producto">Deportivo</li>
+                    <li class="item__producto">Formal</li>
+                </ol>
+                <button class="btn">Ver productos</button>
+            </div>
+            <div class="producto">
+                <div class="contenedor__titulo--productos">
+                    <h2 class="titulo__producto">Shorts y Joggins</h2>
+                </div>
+                <ol class="lista__producto">
+                    <li class="item__producto">Básico</li>
+                    <li class="item__producto">Deportivo</li>
+                    <li class="item__producto">Bermudas</li>
+                </ol>
+                <button class="btn">Ver productos</button>
+            </div>
+            <div class="producto">
+                <div class="contenedor__titulo--productos">
+                    <h2 class="titulo__producto">Accesorios y más</h2>
+                </div>
+                <ol class="lista__producto">
+                    <li class="item__producto">Vinchas</li>
+                    <li class="item__producto">Bucales</li>
+                    <li class="item__producto">Medias</li>
+                </ol>
+                <button class="btn">Ver productos</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="p__footer--contenedor">
+            <p>Copyright 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FCC: Survey Form</title>
+
+</head>
+
+<body>
+    <!-- Descripcion -->
+    <header class="contenedor__cabecera">
+        <h1 class="h1__cabecera" id="title">Programación</h1>
+        <hr class="linea__descripcion">
+        <p class="p__cabecera" id="description">¡Gracias por tomarte el tiempo para completar la encuesta!</p>
+    </header>
+    <div class="contenedor__formulario">
+        <form class="formulario__encuesta" id="survey-form">
+            <!-- Registro -->
+            <div class="control__de--formulario registro">
+                <label for="name" id="name-label">Nombre</label>
+                <input type="text" class="input input-text" class="control__de-formulario" id="name"
+                    placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="control__de-fomulario registro">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" class="input input-text" class="control__de-formulario" id="email"
+                    placeholder="Ingresa tu email" required>
+            </div>
+            <div class="control__de-formulario registro">
+                <label for="number" id="number-label">Edad <span>(opcional)</span> </label>
+                <input type="number" class="input input-text" class="control__de-formulario" id="number"
+                    placeholder="Edad" min="10" max="99">
+            </div>
+            <hr class="hr__div">
+            <!-- Seleccion de campos tipo radio -->
+            <div class="control__de--formulario genero">
+                <p>Selecciona tu genero:</p>
+                <label>
+                    <input type="radio" value="masculino" name="genero-usuario">
+                    Mascúlino.</label>
+                <label>
+                    <input type="radio" value="femenino" name="genero-usuario">
+                    Femenino.</label>
+                <label>
+                    <input type="radio" value="sin-declarar" name="genero-usuario">
+                    Prefiero no decirlo.</label>
+            </div>
+            <hr class="hr__div">
+            <!-- Seleccion de inputs tipo radio  -->
+            <div class="control__de--formulario area">
+                <p class="p__formulario">¿Cuál es tu area favorita?</p>
+                <select name="rol__del--desarrollador" id="dropdown">
+                    <option disabled selected>Elejí una de las siguientes opciones</option>
+                    <option value="frontend">Desarrollo web Frontend</option>
+                    <option value="backend">Desarrollo web Backend</option>
+                    <option value="fullstack">Desarrollo web Fullstack</option>
+                    <option value="apps">Desarrollo de Apps</option>
+                    <option value="videojuegos">Desarrollo de Videojuegos</option>
+                    <option value="bigdata">Big Data</option>
+                    <option value="ia">Inteligencia Artificial</option>
+                    <option value="blockchain">Tecnología Blockchain</option>
+                </select>
+            </div>
+            <!-- Seleccion de inputs tipo radio  -->
+            <div class="control__de-formulario frecuencia">
+                <p>¿Cuánto tiempo pasas codeando?</p>
+                <label>
+                    <input type="radio" value="opcion1" name="tiempo-frecuencia">
+                    De 1hs a 3hs.</label>
+                <label>
+                    <input type="radio" value="opcion2" name="tiempo-frecuencia">
+                    De 3hs a 6hs.</label>
+                <label>
+                    <input type="radio" value="opcion3" name="tiempo-frecuencia">
+                    De 6hs a 12hs.</label>
+            </div>
+            <hr class="hr__div">
+            <!-- Seleccion de inputs tipo checkbox -->
+            <div class="control__de--formulario otras__actividades">
+                <p>¿Cuál de las siguientes areas te interesan?</p>
+                <label>
+                    <input type="checkbox" value="Deportes" name="actividades">
+                    Deportes.</label>
+                <label>
+                    <input type="checkbox" value="Finanzas" name="actividades">
+                    Finanzas.</label>
+                <label>
+                    <input type="checkbox" value="Politica" name="actividades">
+                    Política.</label>
+                <label>
+                    <input type="checkbox" value="Enseñanza" name="actividades">
+                    Enseñanza.</label>
+                <label>
+                    <input type="checkbox" value="Videojuegos" name="actividades">
+                    Videojuegos.</label>
+                <label>
+                    <input type="checkbox" value="Otro" name="actividades">
+                    Otro.</label>
+            </div>
+            <hr class="hr__div">
+            <div class="control__de--formulario dia__a--dia">
+                <p>¡Contame como es tu día a día!</p>
+                <textarea class="input__textarea" name="comentario" id="comentario"
+                    placeholder="Ingresa tu comentario"></textarea>
+            </div>
+            <div class="control__de--formulario">
+                <div class="enviar">
+                    <button id="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
